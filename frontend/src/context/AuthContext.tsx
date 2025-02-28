@@ -84,7 +84,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setUser(response.user);
       toast({
         title: "Success",
-        description: "Your account has been created!",
+        description: "Your account has been created successfully",
       });
     } catch (error) {
       console.error("Registration error in context:", error);
