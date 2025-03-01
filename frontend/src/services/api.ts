@@ -3,7 +3,8 @@ import axios from "axios";
 import { AuthResponse, Category, User } from "@/types";
 import { getToken, handleApiError, setToken, setUser } from "@/lib/auth";
 
-const API_URL = "https://ecomm-sk-backend.vercel.app";
+const API_URL = import.meta.env.VITE_API_URL;
+
 
 
 const api = axios.create({
