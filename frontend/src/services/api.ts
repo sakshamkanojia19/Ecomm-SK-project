@@ -134,6 +134,7 @@ export const CategoryService = {
     } catch (error) {
       console.error('Error updating user preferences:', error);
       return handleApiError(error);
+      // api
     }
   },
 };
